@@ -1,53 +1,171 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
     <title>Nerds</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
-
-
 </head>
+
 <body>
-
-<header class="header">
-    <div class="container">
-            
-        <a href="#" class="logo"><img src="assets/img/logo.png" alt=""></a>
-        <nav class="header-nav">
-            <ul>
-                <li><a class="header-nav__link" href="#">СТУДИЯ</a></li>
-                <li><a class="header-nav__link" href="#">КЛИЕНТЫ</a></li>
-                <li><a class="header-nav__link" href="#">МАГАЗИН</a></li>
-                <li><a class="header-nav__link" href="#">КОНТАКТЫ</a></li>
-                <li><a class="header-nav__link" href="#">КОРЗИНА</a></li>
-            </ul>
-        </nav>
-    </div>
-    <h1>Магазин готовых шаблонов</h1>
-</header>
- 
-<main>
-
-        <nav class="main-nav">
-                <ul>
-                    <li><a class="main-nav__link" href="#">СТОИМОСТЬ:</a></li>
-                    <li><a class="main-nav__link" href="#">СОРТИРОВАТЬ:</a></li>
-                    <li><a class="main-nav__link" href="#">ПО ЦЕНЕ</a></li>
-                    <li><a class="main-nav__link" href="#">ПО ТИПУ</a></li>
-                    <li><a class="main-nav__link" href="#">ПО НАЗВАНИЮ</a></li>
+    <div class="content">
+        <header class="content__header header">
+            <h1 class="visually-hidden">Дизайн студия Nerds</h1>
+            <!-- Меню -->
+            <nav class="centerer menu">
+                <!-- Логотип-->
+                <a class="menu__logo logo"
+                   href="#">
+                    <img class="logo__img"
+                         src="#"
+                         alt="Логотип Nerds" /></a>
+                <!-- Ссылки-->
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link"
+                           href="#">Cтудия</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link"
+                           href="#">Клиенты</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link"
+                           href="#">Магазин</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link"
+                           href="#">Контакты</a>
+                    </li>
+                    <li class="menu__item menu__item--basket">
+                        <a class="menu__link"
+                           href="#">Корзина</a>
+                    </li>
                 </ul>
             </nav>
+            <!-- Cлайдер -->
+            <div class="centerer slider">
+                <ul class="slider__slides">
+                    <!-- Слайд -->
+                    <li class="slider__slide slide">
+                        <h2 class="slide__title">Долго, дорого, скрупулезно.</h2>
+                        <p class="slide__description">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                        <a class="slide__button button button--alert"
+                           href="#">Узнать больше</a>
+                    </li>
+                    <!--Слайды-->
+                </ul>
+                <!-- Переключатели -->
+                <ul class="slider__controls">
+                    <li class="slider__control">
+                        <input type="radio" />
+                        <label>1</label>
+                    </li>
+                    <li class="slider__control">
+                        <input type="radio" />
+                        <label>2</label>
+                    </li>
+                    <li class="slider__control">
+                        <input type="radio" />
+                        <label>3</label>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main class="content__main">
+            <div class="centerer">
+                <!-- Наши продукты / услуги -->
+                <section сlass="section products">
+                    <h2 class="visually-hidden">Наши продукты и услуги</h2>
+                    <ul class="products__list">
+                        <li class="product">
+                            <img src="#"
+                                 alt="Пример веб-сайта" />
+                            <p сlass="product__title">Веб-сайты</p>
+                            <p class="product__description">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+                            <button сlass="product__button button button--alert">Заказать</button>
+                        </li>
+                        <li class="product">
+                            <img src="#"
+                                 alt="Пример приложения" />
+                            <p сlass="product__title">Приложения</p>
+                            <p class="product__description">Покорите топ 10 приложений в AppStore и Google Play</p>
+                            <button сlass="product__button button button--primary">Заказать</button>
+                        </li>
+                        <li class="product">
+                            <img src="#"
+                                 alt="Пример презентации" />
+                            <p сlass="product__title">Презентации</p>
+                            <p class="product__description">Вы даже не подозреваете, насколько вы изумительны!</p>
+                            <button сlass="product__button button button--accent">Заказать</button>
+                        </li>
+                    </ul>
+                </section>
+                <!-- О нас -->
+                <section class="section about-us">
+                    <!-- Описание -->
+                    <div class="about-us__block info">
+                        <h2 class="info__title">Мы - маленькая, но гордая дизайн-студия из Краснодара</h2>
+                        <p class="info__description">Исповедует принципы минимализма и чистоты. Ставим математический расчет превыше кеатива. Работает не покладая рук, как роботы.</p>
+                        <p class="info__subtitle">Выполняем заказы на разработку:</p>
+                        <!-- Услуги -->
+                        <ul class="info__services list">
+                            <li class="info__service list__item">Веб-сайтов любой сложности</li>
+                            <li class="info__service list__item">Мобильных приложений на iOS и Android</li>
+                            <li class="info__service list__item">Cлайдшон и видео для корпоративных презентаций</li>
+                        </ul>
+                    </div>
+                    <!-- Статистика -->
+                    <div class="about-us__block statistics">
+                        <img class="statistics__logo"
+                             src="#"
+                             alt="Логотип Nerds" />
+                        <p сlass="statistics__text">C 2004 года любим точность во всем:</p>
+                        <ul class="statistics__list">
+                            <li class="statistics__item">
+                                <p class="statistics__percent">146%</p>
+                                <p class="statistics__label">Уровень самоотдачи</p>
+                            </li>
+                            <li class="statistics__item">
+                                <p class="statistics__percent">100%</p>
+                                <p class="statistics__label">Соблюдение сроков</p>
+                            </li>
+                            <li class="statistics__item">
+                                <p class="statistics__percent">50%</p>
+                                <p class="statistics__label">Минимальная предоплата</p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- Клиенты -->
+                <section class="section clients">
+                    <h2 сlass="visually-hidden">Наши клиенты</h2>
+                    <ul class="clients__list">
+                        <li class="clients__client">
+                            <img class="clients__img"
+                                 alt="Html academy" />
+                        </li>
+                        <li class="clients__client">
+                            <img class="clients__img"
+                                 alt="Borodinski" />
+                        </li>
+                        <li class="clients__client">
+                            <img class="clients__img"
+                                 alt="Pink" />
+                        </li>
+                        <li class="clients__client">
+                            <img class="clients__img"
+                                 alt="Mishka" />
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+        <footer class="content__footer footer">
 
-    <section class="slider">
-
-    </section>
-</main>
-  
-    
-    
-
+        </footer>
+    </div>
 </body>
+
 </html>

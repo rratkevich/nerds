@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    font-size: 25pt;
+    font-size: 25px;
     color: #000;
 }
 
@@ -26,7 +26,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .header-nav {
-    font-size: 16pt;
+    font-size: 16px;
     
 }
 
