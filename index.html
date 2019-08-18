@@ -6,23 +6,25 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
     <title>Nerds</title>
+    <link rel="stylesheet"
+          href="styles.css">
 </head>
 
 <body>
     <div class="content">
         <header class="content__header header">
-            <h1 class="visually-hidden">Nerds</h1>
+            <h1 class="visually-hidden">Дизайн студия Nerds</h1>
             <!-- Меню -->
             <nav class="centerer menu">
                 <!-- Логотип-->
                 <a class="menu__logo logo"
-                   href="#">
+                   href="/">
                     <img class="logo__img"
-                         src="#"
+                         src="./img/main-logo.svg"
                          alt="Логотип Nerds" /></a>
                 <!-- Ссылки-->
                 <ul class="menu__list">
-                    <li class="menu__item">
+                    <li class="menu__item menu__item--studio">
                         <a class="menu__link"
                            href="#">Cтудия</a>
                     </li>
@@ -48,27 +50,56 @@
             <div class="centerer slider">
                 <ul class="slider__slides">
                     <!-- Слайд -->
-                    <li class="slider__slide slide">
-                        <h2 class="slide__title">Долго, дорого, скрупулезно.</h2>
-                        <p class="slide__description">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                    <li class="slider__slide slider__slide--active slide">
+                        <h2 class="slide__title">Долго, дорого,<br /> скрупулезно.</h2>
+                        <p class="slide__description">Математически выверенный дизайн<br /> для вашего сайта или мобильного приложения.</p>
                         <a class="slide__button button button--alert"
                            href="#">Узнать больше</a>
                     </li>
-                    <!--Слайды-->
+                    <!-- Слайд -->
+                    <li class="slider__slide slide">
+                        <h2 class="slide__title">Любим математику<br /> как никто другой</h2>
+                        <p class="slide__description">Никакого креатива, только математические формулы<br /> для расчета идеальных пропорций.</p>
+                        <a class="slide__button button button--alert"
+                           href="#">Узнать больше</a>
+                    </li>
+                    <!-- Слайд -->
+                    <li class="slider__slide slide">
+                        <h2 class="slide__title">Только ночь,<br /> только хардкор</h2>
+                        <p class="slide__description">Работать днем, как все? Мы против этого.<br /> Ближе к полуночи работа только начинается.</p>
+                        <a class="slide__button button button--alert"
+                           href="#">Узнать больше</a>
+                    </li>
                 </ul>
                 <!-- Переключатели -->
                 <ul class="slider__controls">
-                    <li class="slider__control">
-                        <input type="radio" />
-                        <label>1</label>
+                    <li class="slider__control radio">
+                        <input class="radio__input"
+                               type="radio"
+                               name="slide"
+                               value="1"
+                               id="slide1"
+                               checked />
+                        <label class="radio__label"
+                               for="slide1">1</label>
                     </li>
-                    <li class="slider__control">
-                        <input type="radio" />
-                        <label>2</label>
+                    <li class="slider__control radio">
+                        <input class="radio__input"
+                               type="radio"
+                               name="slide"
+                               value="2"
+                               id="slide2" />
+                        <label class="radio__label"
+                               for="slide2">2</label>
                     </li>
-                    <li class="slider__control">
-                        <input type="radio" />
-                        <label>3</label>
+                    <li class="slider__control radio">
+                        <input class="radio__input"
+                               type="radio"
+                               name="slide"
+                               value="3"
+                               id="slide3" />
+                        <label class="radio__label"
+                               for="slide3">3</label>
                     </li>
                 </ul>
             </div>
@@ -76,29 +107,35 @@
         <main class="content__main">
             <div class="centerer">
                 <!-- Наши продукты / услуги -->
-                <section сlass="section products">
+                <section class="section products">
                     <h2 class="visually-hidden">Наши продукты и услуги</h2>
                     <ul class="products__list">
-                        <li class="product">
-                            <img src="#"
+                        <li class="products__product product">
+                            <img class="product__img"
+                                 src="./img/main-websites.jpg"
                                  alt="Пример веб-сайта" />
-                            <p сlass="product__title">Веб-сайты</p>
+                            <p class="product__title">Веб-сайты</p>
                             <p class="product__description">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-                            <button сlass="product__button button button--alert">Заказать</button>
+                            <button class="product__button button button--alert"
+                                    type="button">Заказать</button>
                         </li>
-                        <li class="product">
-                            <img src="#"
+                        <li class="products__product product">
+                            <img class="product__img"
+                                 src="./img/main-applications.jpg"
                                  alt="Пример приложения" />
-                            <p сlass="product__title">Приложения</p>
+                            <p class="product__title">Приложение</p>
                             <p class="product__description">Покорите топ 10 приложений в AppStore и Google Play</p>
-                            <button сlass="product__button button button--primary">Заказать</button>
+                            <button class="product__button button button--primary"
+                                    type="button">Заказать</button>
                         </li>
-                        <li class="product">
-                            <img src="#"
+                        <li class="products__product product">
+                            <img class="product__img"
+                                 src="./img/main-presentations.jpg"
                                  alt="Пример презентации" />
-                            <p сlass="product__title">Презентации</p>
+                            <p class="product__title">Презентации</p>
                             <p class="product__description">Вы даже не подозреваете, насколько вы изумительны!</p>
-                            <button сlass="product__button button button--accent">Заказать</button>
+                            <button class="product__button button button--accent"
+                                    type="button">Заказать</button>
                         </li>
                     </ul>
                 </section>
@@ -106,57 +143,73 @@
                 <section class="section about-us">
                     <!-- Описание -->
                     <div class="about-us__block info">
-                        <h2 class="info__title">Мы - маленькая, но гордая дизайн-студия из Краснодара</h2>
+                        <h2 class="info__title">Мы — маленькая, но гордая дизайн-студия из Краснодара</h2>
                         <p class="info__description">Исповедует принципы минимализма и чистоты. Ставим математический расчет превыше кеатива. Работает не покладая рук, как роботы.</p>
                         <p class="info__subtitle">Выполняем заказы на разработку:</p>
                         <!-- Услуги -->
                         <ul class="info__services list">
                             <li class="info__service list__item">Веб-сайтов любой сложности</li>
                             <li class="info__service list__item">Мобильных приложений на iOS и Android</li>
-                            <li class="info__service list__item">Cлайдшон и видео для корпоративных презентаций</li>
+                            <li class="info__service list__item">Cлайдшоу и видео для корпоративных презентаций</li>
                         </ul>
                     </div>
                     <!-- Статистика -->
-                    <div class="about-us__block statistics">
-                        <img class="statistics__logo"
-                             src="#"
+                    <div class="about-us__block about-us__block--stats stats">
+                        <img class="stats__logo"
+                             src="./img/logo-nerds.jpg"
                              alt="Логотип Nerds" />
-                        <p сlass="statistics__text">C 2004 года любим точность во всем:</p>
-                        <ul class="statistics__list">
-                            <li class="statistics__item">
-                                <p class="statistics__percent">146%</p>
-                                <p class="statistics__label">Уровень самоотдачи</p>
+                        <p class="stats__text">C 2004 года любим точность во всем:</p>
+                        <ul class="stats__list">
+                            <li class="stats__item">
+                                <p class="stats__percent">146%</p>
+                                <p class="stats__label">Уровень <br />самоотдачи</p>
                             </li>
-                            <li class="statistics__item">
-                                <p class="statistics__percent">100%</p>
-                                <p class="statistics__label">Соблюдение сроков</p>
+                            <li class="stats__item">
+                                <p class="stats__percent">100%</p>
+                                <p class="stats__label">Соблюдение <br />сроков</p>
                             </li>
-                            <li class="statistics__item">
-                                <p class="statistics__percent">50%</p>
-                                <p class="statistics__label">Минимальная предоплата</p>
+                            <li class="stats__item">
+                                <p class="stats__percent">50%</p>
+                                <p class="stats__label">Минимальная <br />предоплата</p>
                             </li>
                         </ul>
                     </div>
                 </section>
                 <!-- Клиенты -->
                 <section class="section clients">
-                    <h2 сlass="visually-hidden">Наши клиенты</h2>
+                    <h2 class="visually-hidden">Наши клиенты</h2>
                     <ul class="clients__list">
-                        <li class="clients__client">
-                            <img class="clients__img"
-                                 alt="Html academy" />
+                        <li class="clients__client client">
+                            <a href="#"
+                               target="_blank">
+                                <img class="client__img"
+                                     src="./img/logo-htmlacademy.png"
+                                     alt="Html academy" />
+                            </a>
                         </li>
-                        <li class="clients__client">
-                            <img class="clients__img"
-                                 alt="Borodinski" />
+                        <li class="clients__client client">
+                            <a href="#"
+                               target="_blank">
+                                <img class="client__img"
+                                     src="./img/logo-borodinski.png"
+                                     alt="Borodinski" />
+                            </a>
                         </li>
-                        <li class="clients__client">
-                            <img class="clients__img"
-                                 alt="Pink" />
+                        <li class="clients__client client">
+                            <a href="#"
+                               target="_blank">
+                                <img class="client__img"
+                                     src="./img/logo-pink.png"
+                                     alt="Pink" />
+                            </a>
                         </li>
-                        <li class="clients__client">
-                            <img class="clients__img"
-                                 alt="Mishka" />
+                        <li class="clients__client client">
+                            <a href="#"
+                               target="_blank">
+                                <img class="clients__img"
+                                     src="./img/logo-mishka.png"
+                                     alt="Mishka" />
+                            </a>
                         </li>
                     </ul>
                 </section>
@@ -167,14 +220,17 @@
             <section class="section section--reset">
                 <h2 class="visually-hidden">Где нас искать?</h2>
                 <div class="map">
-                    <div class="map__content centerer">
+                    <div class="map__tiles"
+                         id="map"></div>
+                    <div class="centerer">
                         <div class="map__address-card address-card">
-                            <p сlass="address-card__title">Nёrds design studio</p>
-                            <address сlass="address-card__address">191186, Санкт-Петербург, <br /> ул. Б. Конюшенная, д. 19/8</address>
-                            <a class="address-card__tel"
-                               href="tel:">+7 (812) 275-75-75</a>
-                            <a class="button button--alert"
-                               href="mailto:">Напишите нам</a>
+                            <p class="address-card__title">Nёrds design studio</p>
+                            <address class="address-card__address">191186, Санкт-Петербург, <br /> ул. Б. Конюшенная, д. 19/8</address>
+                            <span class="address-card__tel">тел:
+                                <a class="link"
+                                   href="tel:88122757575">+7 (812) 275-75-75</a>
+                            </span>
+                            <button class="address-card__button button button--alert button--wide">Напишите нам</button>
                         </div>
                     </div>
                 </div>
@@ -184,17 +240,35 @@
                 <section class="section contacts">
                     <h2 class="visually-hidden">Мы в соцсетях</h2>
                     <ul class="contacts__socials socials">
-                        <li class="socials__item social social--vk">Вконтакте</li>
-                        <li class="socials__item social social--fb">Facebook</li>
-                        <li class="socials__item social social-inst">Instagram</li>
+                        <li class="socials__item social social--vk">
+                            <a class="social__link"
+                               href="#"
+                               target="_blank">Вконтакте</a>
+                        </li>
+                        <li class="socials__item social social--fb">
+                            <a class="social__link"
+                               href="#"
+                               target="_blank">Facebook</a>
+                        </li>
+                        <li class="socials__item social social--insta">
+                            <a class="social__link"
+                               href="#"
+                               target="_blank">Instagram
+                            </a>
+                        </li>
                     </ul>
-                    <p class="contacts__promo promo">Давайте дружить, это выгодно!
+                    <p class="contacts__promo promo">
+                        <span class="promo__text">Давайте дружить, это выгодно!</span>
                         <span сlass="promo__sale">Скидка 10% для друзей из социальных сетей</span>
                     </p>
                 </section>
             </div>
         </footer>
     </div>
+
+    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="js/map.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 
 </html>
